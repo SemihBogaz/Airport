@@ -10,12 +10,15 @@ class Ticket:
 
     def __str__(self):
         ticket = """
-        Name:\t{}
-        Surname:\t{}
-        ID:\t{}
-        Flight Date:\t{}
-        Flight Time:\t{}
-        Seat:\t{}    
+        Name:         {}
+        Surname:      {}
+        ID:           {}
+        Flight Date:  {}
+        Flight Time:  {}
+        Seat:         {}
+        Departure:    {}
+        Destination:  {}  
         """.format(self.__Customer.get_name(), self.__Customer.get_surname(), self.__Customer.get_ID(),
-                   self.__Flight.get_date().date(), self.__Flight.get_date().time(), self.__Seat)
-        return str(25*'=' + '\n' + ticket + '\n' + 25*'=')
+                   self.__Flight.get_date().date(), self.__Flight.get_date().time(), self.__Seat,
+                   self.__Flight.get_depar(), self.__Flight.get_dest())
+        return str(100*'=' + '\n' + ticket + '\n' + 100*'=')

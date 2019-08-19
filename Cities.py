@@ -104,4 +104,7 @@ class Cities:
     def get_weather(self):
         return self.__Weather
 
+    def __str__(self):
+        return self.__Name
+
     # did not create setter methods for temp & weather

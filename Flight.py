@@ -8,6 +8,15 @@ class Flight:
         self.__Departure = departure
         self.__Dates = dates
 
+    def get_depar(self):
+        return self.__Departure
+
+    def get_dest(self):
+        return self.__Destination
+
+    def get_date(self):
+        return self.__Dates
+
     def tardiness(self, minutes: int):
         Day = self.__Dates.day
         Hour = self.__Dates.hour
@@ -23,16 +32,5 @@ class Flight:
 
         newDate = datetime(self.__Dates.year, self.__Dates.month, Day, Hour, Minute)
         self.__Dates = newDate
-
-    def get_date(self):
-        return self.__Dates
-
-
-# x = Flight(Cities("İstanbul"), Cities("İzmir"), datetime(2019, 8, 2, 7, 40))
-# print(str(x.get_date().hour) + "." + str(x.get_date().minute))
-# x.tardiness(int(30))
-# print(str(x.get_date().hour) + "." + str(x.get_date().minute))
-#
-
 
 
