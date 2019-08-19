@@ -1,5 +1,5 @@
 from datetime import datetime
-from Airport.cities import Cities
+from Airport.Cities import Cities
 
 
 class Flight:
@@ -28,11 +28,11 @@ class Flight:
         return self.__Dates
 
 
-x = Flight(Cities("İstanbul"), Cities("İzmir"), datetime(2019, 8, 2, 7, 40))
-print(str(x.get_date().hour) + "." + str(x.get_date().minute))
-x.tardiness(int(30))
-print(str(x.get_date().hour) + "." + str(x.get_date().minute))
-
+# x = Flight(Cities("İstanbul"), Cities("İzmir"), datetime(2019, 8, 2, 7, 40))
+# print(str(x.get_date().hour) + "." + str(x.get_date().minute))
+# x.tardiness(int(30))
+# print(str(x.get_date().hour) + "." + str(x.get_date().minute))
+#
 
 
 
