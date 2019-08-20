@@ -1,5 +1,4 @@
-from Airport.Customer import Customer
-from Airport.Flight import Flight
+from Airport import Customer, Flight
 
 
 class Ticket:
@@ -22,3 +21,6 @@ class Ticket:
                    self.__Flight.get_date().date(), self.__Flight.get_date().time(), self.__Seat,
                    self.__Flight.get_depar(), self.__Flight.get_dest())
         return str(100*'=' + '\n' + ticket + '\n' + 100*'=')
+
+    def get_flight(self):
+        return self.__Flight

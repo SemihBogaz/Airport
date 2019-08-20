@@ -1,4 +1,3 @@
-
 class Customer:
     def __init__(self, name: str, surname: str, idno: int):
         self.__Name = name

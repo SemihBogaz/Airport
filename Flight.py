@@ -1,5 +1,5 @@
 from datetime import datetime
-from Airport.Cities import Cities
+from Airport import Cities
 
 
 class Flight:
